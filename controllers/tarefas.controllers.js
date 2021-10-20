@@ -37,8 +37,7 @@ class TarefasController {
       res.status(201).send({
         message: `Tarefa : ${tarefaSalva.title} adicionada com sucesso`,
       });
-    } 
-    catch (err) {
+    } catch (err) {
       console.log(err);
       res.status(500).send({
         error: err,
