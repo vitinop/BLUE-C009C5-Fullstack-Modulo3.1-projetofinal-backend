@@ -19,7 +19,8 @@ Conn(db_url, db_user, db_pass, db_data);
 
 app.use("/tarefas", tarefasRoutes);
 
-const port = process.env.PORT || 3001;
-app.listen(port, () => {
+// const port = process.env.PORT || 3001;
+
+app.listen(process.env.PORT || 3001, () => {
   console.info(`O app está rodando na porta http://localhost:${port}/`);
 });
